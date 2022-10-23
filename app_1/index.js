@@ -4,12 +4,12 @@ const port = 3000
 
 app.get('/', (req, res) => {
   res.status(200)
-  res.send('APP_1')
+  res.send('Tentando dar meu melhor na minha pior fase<br/>Sabe como é, menor<br/>Feridas se curam com o tempo, não com gaze<br/>')
 })
 
 app.get('/healthcheck', (req, res) => {
   res.status(200)
-  res.send('I\'m OK APP_1')
+  res.send('I\'m OK - APP_1')
 })
 
 app.listen(port, () => {
