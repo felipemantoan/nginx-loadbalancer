@@ -3,7 +3,7 @@ services:
   nginx:
     image: nginx:stable
     volumes:
-      - ./:/app/:rw
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:rw
     ports:
       - "80:80"
     networks:
@@ -12,37 +12,24 @@ services:
       - app_1
 
   app_1:
+    container_name: app_1
     image: app_1
     build:
       context: .
       dockerfile: Dockerfile
       target: app_1
-    container_name: app_1
-    ports:
-      - "3000:3000"
     networks:
       - load_balancer
     
   app_2:
+    container_name: app_2
     image: app_2
     build:
       context: .
       dockerfile: Dockerfile
       target: app_2
-    container_name: app_2
-    ports:
-      - "3001:3000"
     networks:
       - load_balancer
-
-  # app_2:
-  #   image: nginx:stable
-  #   container_name: app_2
-  #   tty: true
-  #   volumes:
-  #     - ./app:/app/:rw
-  #   networks:
-  #     - load_balancer
 
 networks:
   load_balancer:
