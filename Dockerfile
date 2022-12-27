@@ -1,4 +1,4 @@
-FROM public.ecr.aws/docker/library/node:16.13.1-alpine as base
+FROM public.ecr.aws/docker/library/node:alpine as base
 
 WORKDIR /app
 
@@ -13,6 +13,14 @@ CMD ["index.js"]
 FROM base as app_2
 
 ADD ./app_2 .
+
+RUN npm i
+
+CMD ["index.js"]
+
+FROM base as app_3
+
+ADD ./app_3 .
 
 RUN npm i
 

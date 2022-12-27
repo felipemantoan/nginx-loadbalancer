@@ -5,7 +5,7 @@ const port = 3000
 app.get('/', (req, res) => {
   const html = `
   <!DOCTYPE html>
-  <html lang="en" style="background-color: green;">
+  <html lang="en" style="background-color: yellow;">
   <head>
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +15,14 @@ app.get('/', (req, res) => {
   <body>
     <h1>APP_3</h1>
     <strong>
-    <br/>I could talk about every time that you showed up on time<br/>But I\'d have an empty line \'cause you never did<br/>Never paid any mind to my mother or friends<br/>So I shut \'em all out for you \'cause I was a kid'
+      Let the voice of reason shine <br />
+      Let the pious vanish for all times <br />
+      God's face is hidden, all unseen <br />
+      You can't ask Him what it all means <br />
+      He was never on your side <br />
+      God was never on your side <br />
+      Let right or wrong, alone decide <br />
+      God was never on your side <br />
     </strong>
     </body>
   </html>
