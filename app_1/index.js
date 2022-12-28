@@ -28,7 +28,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/bisteca', (req, res) => {
-  res.json({ query: res.query || null, headers: res.headers || [] })
+  res.json({ query: req.query, headers: req.headers })
   res.status(200)
 })
 

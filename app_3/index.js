@@ -41,7 +41,7 @@ app.get('/healthcheck', (req, res) => {
 })
 
 app.get('/alface', (req, res) => {
-  res.json({ query: res.query || null, headers: res.headers || [] })
+  res.json({ query: req.query, headers: req.headers })
   res.status(200)
 })
 
