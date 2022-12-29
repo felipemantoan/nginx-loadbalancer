@@ -16,9 +16,19 @@ app.get('/', (req, res) => {
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>APP - 1</title>
   </head>
-  <body>
+  <body style="color: white;">
+  <h1>APP_1</h1><br/>
   <strong>
-    <h1>APP_1</h1><br/>Tentando dar meu melhor na minha pior fase<br/>Sabe como é, menor<br/>Feridas se curam com o tempo, não com gaze<br/>
+    Tentando dar meu melhor na minha pior fase <br />
+    Sabe como é, menor <br />
+    Feridas se curam com o tempo, não com gaze <br />
+    E quando ganhei meu dinheiro eu perdi a base <br />
+    Logo eu que fiz gritos pros excluídos <br />
+    Tiração pros instruídos <br />
+    Chegar aqui de onde eu vim <br />
+    É desafiar a lei da gravidade <br />
+    Pobre morre ou é preso, nessa idade <br />
+    Saudade quando era chinelin no pé <br />
   </strong>
   </body>
   </html>

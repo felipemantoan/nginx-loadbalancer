@@ -25,3 +25,11 @@ ADD ./app_3 .
 RUN npm i
 
 CMD ["index.js"]
+
+FROM base as app_4
+
+ADD ./app_4 .
+
+RUN npm i
+
+CMD ["index.js"]

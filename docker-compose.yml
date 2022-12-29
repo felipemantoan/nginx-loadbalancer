@@ -42,6 +42,17 @@ services:
     networks:
       - load_balancer
 
+  app_4:
+    container_name: app_4
+    image: app_4
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: app_4
+    networks:
+      - load_balancer
+
+
 networks:
   load_balancer:
     driver: bridge
